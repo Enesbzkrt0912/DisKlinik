@@ -14,7 +14,7 @@ namespace DisKlinik
         public SqlConnection GetCon()
         {
             SqlConnection baglanti = new SqlConnection();
-            baglanti.ConnectionString = @"Data Source=BATCOMPUTER\SQLEXPRESS;Initial Catalog=DentalDb;Integrated Security=True";
+            baglanti.ConnectionString = @"Data Source=\SQLEXPRESS;Initial Catalog=DentalDb;Integrated Security=True";
             return baglanti;
         }
     }
